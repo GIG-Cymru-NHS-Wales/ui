@@ -1,16 +1,10 @@
 # Authentication user experience
 
-**Status**: Experiment by IGDC-DHCW + draft + work in progress + request for comments
-
-**Date**: 2025-05-16
-
-**Governance**: IGDC-DHCW for the time being
-
 ## Situation - Context and Problem Statement
 
-We are developing a hospital emergency department software application, and we
-are learning that some kinds of authentication are not viable e.g. sending the
-doctor an SMS text, or using a TOPT authenticator app on a nurse's mobile phone.
+We are developing a hospital applications, and we are learning that some kinds
+of authentication are not viable e.g. sending the doctor an SMS text, or using a
+TOPT authenticator app on a nurse's mobile phone.
 
 This is a work in progress (WIP) and a request for comments (RFC).
 
@@ -19,15 +13,31 @@ and help.
 
 Contact Joel Henderson <joel.henderson@wales.nhs.uk>
 
-## Background - Decision Drivers
+## Drivers
 
 High-level purpose:
 
-* We need multi-factor authentication because the data includes high-security healthcare records.
+* We need multi-factor authentication because the data includes high-security
+  healthcare records.
 
-* We want speed because some emergency department patients have life-threatening critical issues.
+* We want speed because some emergency department patients have life-threatening
+  critical issues.
 
-* We want convenience because the clinical staff has so much things happening at once.
+* We want convenience because the clinical staff has so much things happening at
+  once.
+
+Specific purpose:
+
+* We currently believe the fastest/simplest/best path to the emergency
+  department module (EDM) proof of capability (PoC) for multi-party
+  authentication (MPA) is to skip building it into the app, and instead making
+  an API call to external terminology services, such as a SNOMED service, or
+  MPA-compliance service, etc.
+
+* We want to align with industry standards (not reinvent the wheel).
+
+* We want to get good-enough quality work in place now, so we can try it out,
+ask for feedback, and get help.
 
 ### Introductory reading
 
@@ -44,6 +54,32 @@ in most settings.
 
 For example, we're discovering challenges related to mobile phone text/app
 authentication, mobile phone camera authentication, and touchscreen interfaces.
+
+## Two-person rule & two-person integrity
+
+The two-person rule is a control mechanism designed to achieve a high level of
+security for especially critical material or operations. Under this rule, access
+and actions require the presence of two or more authorized people.
+
+Two-person integrity (TPI) is the name for the security measures taken to
+prevent single-person access.
+
+In the context of healthcare, the two-person rule and two-person integrity can
+be useful in a variety of ways.
+
+* Example When a clinician is treating a minor, then the clinician must have a
+  second-in-command clinician present and also concurring with the treatment.
+
+* Example: When a clinician prescribes a highly-controlled substance, such as a
+  medication that is risky or is known to be likely to be abused, then
+  prescription requires a second clinician to sign it.
+
+Specifically right now, the emergency department module authentication needs
+some kind of plan for authentication using "multi-party authentication" (MPA)
+which is historically known as the "two-person rule" (2PR). Our current
+understanding is that there's a medical must-have requirement to have two
+clinicians do simultaneous authentication in real-time during high-risk
+treatments, procedures, prescriptions, etc.
 
 ### Use autocomplete with email address
 
@@ -232,56 +268,3 @@ typical Android tablet.
 
 There are potential options for biometric sign in beyond face and fingerprints:
 voice recognition, hand recognition, retina recognition. We may research these.
-
-## Recommendation - Decision Outcome
-
-TODO after we gather options.
-
-{Describe the chosen option and justification}.
-
-### Consequences (Optional)
-
-TODO after we gather options.
-
-* Good, because {positive consequence, e.g., improvement of one or more desired qualities, …}
-
-* Bad, because {negative consequence, e.g., compromising one or more desired qualities, …}
-
-* … <!-- numbers of consequences can vary -->
-
-### Confirmation (Optional)
-
-TODO after we gather options.
-
-{Describe how the implementation of/compliance with the ADR can/will be confirmed.}
-
-## Pros and Cons of the Options (Optional)
-
-TODO after we gather options.
-
-### {title of option 1}
-
-TODO after we gather options.
-
-<!-- This is an optional element. Feel free to remove. -->
-{example | description | pointer to more information | …}
-
-* Good, because {argument a}
-
-* Good, because {argument b}
-
-<!-- use "neutral" if the given argument weights neither for good nor bad -->
-* Neutral, because {argument c}
-
-* Bad, because {argument d}
-
-* … <!-- numbers of pros and cons can vary -->
-
-## More Information (Optional)
-
-TODO after we gather options.
-
-{You might want to provide additional evidence/confidence for the decision
-outcome here and/or document the team agreement on the decision and/or define
-when/how this decision the decision should be realised and if/when it should be
-re-visited. Links to other decisions and resources might appear here as well.}
