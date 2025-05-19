@@ -1,5 +1,7 @@
 # athenaOne EHR Software
 
+<https://www.emrfinder.com/athenahealth-ehr-software>
+
 athenaOne® is an all-in-one EHR (Electronic Health Records) software solution that enables healthcare practices to deliver exceptional care and optimize business outcomes. Rated as the 2024 Best in KLAS overall solution for independent physician practices, athenaOne integrates advanced EMR software, Revenue Cycle Management, and patient engagement tools.
 
 Designed to align with how clinicians think, athenaOne’s intuitive EHR system seamlessly incorporates external patient data directly into workflows. This approach provides a comprehensive view of patient care, improving outcomes by identifying gaps in care and diagnoses at the point of care. Practices using athenaOne have consistently outperformed industry benchmarks, particularly in 2023 electronic clinical quality measures, showcasing its value in driving success in value-based care models.
