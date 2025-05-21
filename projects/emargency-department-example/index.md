@@ -13,7 +13,7 @@ Research papers:
 * [Usability of Emergency Department Information System Based on Users' Viewpoint; a Cross-Sectional Study](https://pmc.ncbi.nlm.nih.gov/articles/PMC9637262/)
 
 * [A Real-Time Autonomous Dashboard for the Emergency Department: 5-Year Case Study](https://pmc.ncbi.nlm.nih.gov/articles/PMC6284143/)
- 
+
 ## Scenario
 
 The following scenario was developed based on the existing medical procedures and the most frequently encountered task lists 

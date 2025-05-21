@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Authentication Example</title>
+        <style>
+            body {
+                margin: 2em;
+            }
+        </style>
+        <script>
+            let cache = [
+                "alice.adams@example.com",
+                "bob.brown@example.com",
+                "curt.charles@example.com"
+            ];
+            function onKeyDown() {
+                console.log("onKeyDown()");
+                update(event);
+            }
+            function onKeyUp() {
+                console.log("onKeyUp()");
+                update(event);
+            }
+            function onPaste() {
+                console.log("onPaste()");
+                update(event);
+            }
+            function update(/*KeyboardEvent:*/ event) {
+                console.log(
+                    "update(event)",
+                    "currentTarget.id:", event.currentTarget.id,
+                    "currentTarget.value:", event.currentTarget.value,
+                    "KeyboardEvent",
+                    "key:", event.key,
+                    "code:", event.code,
+                    "shiftKey:", event.shiftKey,
+                    "ctrlKey:", event.ctrlKey,
+                    "altKey:", event.altKey,
+                    "metaKey:", event.metaKey,
+                    ""
+                );
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Authentication Example</h1>
+        <form>
+            <div id="div-email">
+                <label for="email">Username:</label><br>
+                <input
+                    id="username"
+                    name="username"
+                    type="text"
+                    size="60"
+                    placeholder="example@wales.nhs.uk"
+                    onkeydown="onKeyDown()"
+                    onkeyup="onKeyUp()"
+                    onpaste="onPaste()"
+                    z-autocomplete="email"
+                >
+            </div>
+            <br>
+            <div id="div-password">
+                <label for="password">Password:</label><br>
+                <input
+                    id="password"
+                    name="password"
+                    type="password"
+                    autocomplete="new-password"
+                />
+            </div>
+            <br>
+            <br>
+            <div id="div-topt">
+                <label for="token">Time-Based One-Time Token:</label><br>
+                <input
+                    id="topt"
+                    name="topt"
+                    type="text"
+                    autocomplete="off"
+                />
+            </div>
+            <br>
+            <input type="submit" value="Submit" onclick="alert('Logon ' + document.getElementById('username').value); return false;">
+        </form>
+        <script>
+        // function that is self executing
+        // and runs after the DOM is loaded
+        // because the script is at bottom.
+        (function() {
+            // page initialization code here
+            // the DOM will be available here
+        })();
+</script>
+    </body>
+</html>

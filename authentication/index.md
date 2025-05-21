@@ -53,7 +53,8 @@ The hospital emergency department setting has challenges that are different than
 in most settings.
 
 For example, we're discovering challenges related to mobile phone text/app
-authentication, mobile phone camera authentication, and touchscreen interfaces.
+authentication, mobile phone camera authentication, touchscreen interfaces,
+durability of devices, disinfectability, and more.
 
 ## Two-person rule & two-person integrity
 
@@ -199,6 +200,11 @@ This may be an option, at least for some locations and some users.
   and disinfecting screens, such as every hour, or between uses by each staff
   person, or between each patient interaction.
 
+### Portable devices
+
+RSA devices are hardware-based security tokens that use RSA (Rivest-Shamir-Adleman) encryption to provide strong, two-factor authentication (2FA). These devices generate one-time passcodes (OTPs) that are used in conjunction with a user’s traditional password, adding an extra layer of security to online logins. RSA devices often take the form of small, portable tokens or USB keys, and they work by generating a unique code at regular intervals or when prompted by a system during the login process. The cryptographic mechanism behind RSA devices ensures that the authentication process is secure, protecting sensitive systems and data from unauthorized access by verifying the user's identity through both something they know (password) and something they have (RSA token).
+
+
 ## Assessment - Considered Options
 
 We aim to create good-enough security, good-enough speed, and good-enough
@@ -219,6 +225,18 @@ physcial ID card, or an NFC interaction by using a phone or smartwatch, etc.
 
 Newer protocols such as FIDO2 with WebAuthn and CTAP2 offer possibilities to go
 passwordless. A FIDO2 security key looks like a promising path.
+
+Our organization is aiming to phase in FIDO, and aiming to phase out RSA OTP devices.
+
+### RSA devices
+
+RSA devices are hardware-based security tokens that use RSA
+(Rivest-Shamir-Adleman) encryption to provide strong, two-factor authentication
+(2FA). These devices generate one-time passcodes (OTPs) that are used in
+conjunction with a user’s traditional password, adding an extra layer of
+security to online logins. RSA devices often take the form of small, portable
+tokens or USB keys, and they work by generating a unique code at regular
+intervals or when prompted by a system during the login process.
 
 ### Professional mobile phones
 
