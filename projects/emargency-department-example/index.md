@@ -1,17 +1,43 @@
 # Emergency Department Example
 
-Research papers:
+Websites:
 
+* [Koru: the award-winning UX department for healthcare technology teams](https://www.koruux.com/)
+
+* [50 Beautify Examples of Healthcare UI Design Examples](https://www.koruux.com/50-examples-of-healthcare-UI/)
+
+Research papers:
 
 * [Information system design for a hospital emergency department: A usability analysis of software prototypes](https://www.sciencedirect.com/science/article/pii/S1532046409001191)
 
-
 * [Usability of Emergency Department Information System Based on Users' Viewpoint; a Cross-Sectional Study](https://pmc.ncbi.nlm.nih.gov/articles/PMC9637262/)
+
+* [A Real-Time Autonomous Dashboard for the Emergency Department: 5-Year Case Study](https://pmc.ncbi.nlm.nih.gov/articles/PMC6284143/)
+ 
+## Scenario
+
+The following scenario was developed based on the existing medical procedures and the most frequently encountered task lists 
+
+Patient was brought to the hospital ED as a victim of a car accident. Patient has been complaining from extreme pain.
+
+Patient was taken to bed number 10 at the ED. According to their identification
+card, they were born in (city) on (date), and their mobile phone number is
+(phone).
+
+Patient is currently suffering from dyspnoea and nose bleeding. They had an
+operation from her stomach because of gastric bleeding previously. They have
+emphysema in the lungs due to addiction to alcohol and smoking. They have been
+smoking 10 cigarettes per day on average and also has been using 100 mg of
+aspirin 3 times a day to avoid arteriosclerosis. In the family, cancer has been
+seen.
+
+Vital information is blood pressure 160 mmHg with a systolic value and 120 mmHg
+diastolic value, pulse 90, fever 39 °C, respiration rate 50 and oxygen
+saturation 90%, respectively. 
 
 ## Tasks
 
 Nurse tasks:
-
 
 * Insert patient’s identification information
 
@@ -86,3 +112,45 @@ Physician tasks:
 | 21 | Observations          | Vital symptom observations | 100 |
 | 22 | Observations          | Observations of nurse      | 52  |
 | 23 | Observations          | Discharged from hospital   | 100 |
+
+## Nielsen’s ten factor for usability evaluation
+
+* Visibility of system status
+
+* Match between the system and the real world
+  
+* Consistency and standards
+
+* User control and freedom
+
+* Error prevention
+
+* Recognition rather than recall
+
+* Flexibility and efficiency of use
+
+* Esthetic and minimalist design
+* Help users to recognize, to diagnose and to recover from errors
+
+* Help and documentation
+
+## Satisfaction metrics
+
+Items used to measure user satisfaction:
+
+* The interface sizes are helpful for information entry
+
+* The interfaces help during the information entry
+
+* The program flow helped me
+
+* Information entry is practical
+
+* The order of the menu system is helpful to the information entry
+
+* Using the software system is faster than filling the printed ED form
+
+* The order of the menu system is similar to the printed ED form
+
+* Reading and following the form information is faster than reading from papers
+  
