@@ -164,7 +164,7 @@ export default class TrieNodePro<T extends string | number | symbol> {
     public isLeaf(): boolean {
         return Object.keys(this.children).length === 0;
     }
-    
+
 }
 
 module.exports = TrieNodePro;

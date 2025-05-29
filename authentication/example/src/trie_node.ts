@@ -12,5 +12,5 @@ export default class TrieNode<T extends string | number | symbol> {
     public isLeaf(): boolean {
         return Object.keys(this.children).length === 0;
     }
-    
+
 }

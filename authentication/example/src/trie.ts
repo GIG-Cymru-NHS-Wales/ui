@@ -2,7 +2,7 @@ import TrieNode from './trie_node';
 
 export default class Trie<T extends string> {
     public root: TrieNode<T>;
-    
+
     constructor() {
         this.root = new TrieNode();
     }

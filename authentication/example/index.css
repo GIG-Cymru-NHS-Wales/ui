@@ -1,0 +1,20 @@
+body {
+    margin: 3em;
+    font-family: sans-serif;
+    text-align: center;
+}
+label {
+    line-height: 1.5em;
+}
+input[type=text], input[type=password], input[type=submit] {
+    padding: 0.5em;
+}
+
+div.authentication-example-box {
+    margin: auto;
+    display: inline-block;
+    padding: 2em;
+    border: 1px solid #222;
+    background-color: #ddd;
+    text-align: left;
+}

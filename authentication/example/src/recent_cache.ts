@@ -10,7 +10,7 @@
 //
 export default class RecentCache<T> {
     private stack: Array<T> = [];
-    
+
     // Add an element to the start of the stack.
     // Return the array, suitable for chaining.
     add(x: T): Array<T> {
