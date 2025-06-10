@@ -20,7 +20,6 @@ Projects:
 
 <https://github.com/kevindeasis/awesome-ui>
 
-
 A curated list of awesome UI/UX, and Design
 Resource for everything related to UI / UX. Contributions are welcome, just do a pull request!
 

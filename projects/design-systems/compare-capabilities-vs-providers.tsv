@@ -1,10 +1,11 @@
-Capability	Tags	GOV.UK	NHS UK	ONS UK	18F	shadcn	Flowbite	SkeletonUI	IBM Carbon																																								
-Accessibility: Accessibility Compliance Statement	#a11y	?	?	?	?	?	?	?	?																																								
-Accessibility: Web Content Accessibility Guidelines (WCAG) 2.2	#a11y	?	?	?	?	?	?	?	?																																								
-Display: Desktop	#display	✅	✅	✅	✅	✅	✅	✅	✅																																								
-Display: Phone	#display	✅	✅	✅	✅	✅	✅	✅	✅																																								
-Display: Tablet	#display	✅	✅	✅	✅	✅	✅	✅	✅																																								
-Display: Watch	#display	?	?	?	?	?	?	?	?																																								
-Display: TV	#display	?	?	?	?	?	?	?	?																																								
-Display: VR	#display	?	?	?	?	?	?	?	?																																								
-Display: AR	#display	?	?	?	?	?	?	?	?																																								
+Capability	Tags	GOV.UK	NHS UK	ONS UK	18F	Bits UI	shadcn	Flowbite	SkeletonUI	IBM Carbon																																								
+AI: LLM context file	#ai	❌	❌	❌	❌	✅	❌	❌	❌	❌																																								
+Accessibility: Accessibility Compliance Statement	#a11y	?	?	?	?	?	?	?	?	?																																								
+Accessibility: Web Content Accessibility Guidelines (WCAG) 2.2	#a11y	?	?	?	?	?	?	?	?	?																																								
+Display: Desktop	#display	✅	✅	✅	✅	✅	✅	✅	✅	✅																																								
+Display: Phone	#display	✅	✅	✅	✅	✅	✅	✅	✅	✅																																								
+Display: Tablet	#display	✅	✅	✅	✅	✅	✅	✅	✅	✅																																								
+Display: Watch	#display	?	?	?	?	?	?	?	?	?																																								
+Display: TV	#display	?	?	?	?	?	?	?	?	?																																								
+Display: VR	#display	?	?	?	?	?	?	?	?	?																																								
+Display: AR	#display	?	?	?	?	?	?	?	?	?																																								
